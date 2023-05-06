@@ -6,10 +6,10 @@ Feature: Създаване на коментар от потребител
     When Въведем коментара: "<text>"
     And Даваме оценка: "<rating>"
     And Натиснем бутона за коментиране
-    Then Виждаме съобщение: "<expectedMessage>"
+    Then Виждаме съобщение за създаване: "<expectedCreateMessage>"
 
     Examples: 
-      | text        | rating | expectedMessage                              |      
+      | text        | rating | expectedCreateMessage                              |      
    	  | Харесах     | 5      |  Успешно добавихте коментар и оценка!			  |
       | Супер       |        |  Успешно добахихте коментар!                 |
       |             |        |  Секцията за коментар не може да е празна!   |  

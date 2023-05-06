@@ -1,16 +1,14 @@
-package uni.pu.fmi.createComment;
+package uni.pu.fmi.create;
+
+import org.junit.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-
-import uni.pu.fmi.createComment.models.CreateCommentModel;
 
 public class CreateCommentSteps{
 	
 	private CreateCommentModel createCommentModel;
-	
 	@Given("Натиснем бутона за правене на коментар")
 	public void clickMakeComment() {
 		createCommentModel = new CreateCommentModel();
@@ -29,12 +27,8 @@ public class CreateCommentSteps{
         createCommentModel.clickCommentButton();
     }
 	
-	@Then("Виждаме съобщение: {string}")
-    public void checkMessage(String expectedMessage) {
-        Assert.assertEquals(expectedMessage, createCommentModel.getMessage());
+	 @Then("Виждаме съобщение за създаване: {string}")
+    public void checkCreateMessage(String expectedMessage) {
+		Assert.assertEquals(expectedMessage, createCommentModel.getMessage());
     }
-	
-
-
-
 }

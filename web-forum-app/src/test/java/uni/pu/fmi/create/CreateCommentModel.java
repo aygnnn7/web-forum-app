@@ -1,6 +1,6 @@
-package uni.pu.fmi.createComment.models;
+package uni.pu.fmi.create;
 
-import uni.pu.fmi.controllers.CommentController;
+import uni.pu.fmi.controllers.GeneralController;
 
 public class CreateCommentModel {
 
@@ -17,7 +17,7 @@ public class CreateCommentModel {
 	    
 	}
 	public void clickCommentButton() {
-		CommentController commentController = new CommentController();
+		GeneralController commentController = new GeneralController();
 		this.message = commentController.createComment(text, rating);
 	}
 	public String getMessage() {

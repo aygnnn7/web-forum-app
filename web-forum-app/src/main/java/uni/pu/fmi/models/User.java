@@ -4,8 +4,7 @@ import java.util.*;
 
 
 public class User {
-
-    
+	
     public User() {
     }
 
@@ -18,55 +17,50 @@ public class User {
     private Set<Comment> comments;
     
     public Set<Comment> getComments() {
-        // TODO implement here
-        return null;
+        return this.comments;
     }
 
     public Set<Topic> getTopics() {
-        // TODO implement here
-        return null;
+        return this.topics;
     }
 
     public String getUsername() {
-        // TODO implement here
-        return "";
+        return this.username;
     }
 
     public String getPassword() {
-        // TODO implement here
-        return "";
+        return this.password;
     }
 
- 
     public String getEmail() {
-        // TODO implement here
-        return "";
+        
+        return this.email;
     }
 
     public Boolean authenticateIsAdmin() {
-        // TODO implement here
-        return false;
+        return this.isAdmin;
     }
 
     public int getId() {
-        // TODO implement here
-        return 0;
+        return this.id;
     }
-
+    public void setId(int id) {
+    	this.id=id;
+    }
     public void setUsername(String username) {
-        // TODO implement here
+        this.username = username;
     }
 
     public void setPassword(String pass) {
-        // TODO implement here
+        this.password=pass;
     }
 
     public void setEmail(String email) {
-        // TODO implement here
+        this.email = email;
     }
 
     public void setIsAdmin(Boolean isAdmin) {
-        // TODO implement here
+        this.isAdmin = isAdmin;
     }
 
 }
