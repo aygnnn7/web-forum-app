@@ -24,6 +24,7 @@ public class User {
         return this.topics;
     }
 
+    
     public String getUsername() {
         return this.username;
     }
