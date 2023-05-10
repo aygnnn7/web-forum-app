@@ -9,7 +9,7 @@ Feature: Създаване на коментар от потребител
     Then Виждаме съобщение за създаване: "<expectedCreateMessage>"
 
     Examples: 
-      | text        | rating | expectedCreateMessage                              |      
+      | text        | rating |  expectedCreateMessage                       |      
    	  | Харесах     | 5      |  Успешно добавихте коментар и оценка!			  |
       | Супер       |        |  Успешно добахихте коментар!                 |
       |             |        |  Секцията за коментар не може да е празна!   |  
